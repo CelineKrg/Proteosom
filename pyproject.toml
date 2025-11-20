@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proteomics"
+version = "0.1.0"
+description = "simulation of: protein digestion, liquid chromatography, mass spectroscopy"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Celine Krogmann", emaiol = celine.krogmann@stud.uni-heidelberg.de }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pytest",
+    "pandas", 
+    "matplotlib",
+    "pyteomics"
+]
+
+[tool.setuptools.packages.find]
+include = ["Proteomics"]
